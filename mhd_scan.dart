@@ -21,9 +21,9 @@ class MHDScannerPage extends StatefulWidget {
   State<MHDScannerPage> createState() => _MHDScannerPageState();
 }
 ///Hier ist das drama dann vollendet. ich habe ABSOLUT keine AHNUNG was davon jetzt eigentlich ein Bloc sein sollte, jedenfalls sind hier viel zu viele Funktionen
-///das kann so niemals normal sein. Außerdem stört mich, dass hier ja erneut die Kmaera verwendet wird. Ich habe es nicht geschafft DIESELBE kamera die auch für den barcode scanner
-///hier wieder zu verwenden. Sprich sie nie zu schlechen den CameraController sondern zu passen und hier weiter zu verwenden. so wäre es evtl etwas flüssiger (?) I guess.
-///aucb ist mir kein besserer WorkAround eignefallen als diese alle 120 ms oder was das jetzt war ein foto zu machen, dann die RegEx drüber laufen zu lassen und das nächste zu machen
+///das kann so niemals normal sein. Außerdem stört mich, dass hier ja erneut die Kamera verwendet wird. Ich habe es nicht geschafft DIESELBE kamera die auch für den barcode scanner
+///hier wieder zu verwenden. Sprich sie nie zu schließen sondern den CameraController zu passen und hier weiter zu verwenden. so wäre es evtl etwas flüssiger (?) I guess.
+///auch ist mir kein besserer WorkAround eingefallen als diese alle 120 ms oder was das jetzt war ein foto zu machen, dann die RegEx drüber laufen zu lassen und das nächste zu machen
 ///ich finde aber an sich ist der workflow mit den Foto machen eigentlich recht robust. Nur die Funktionen hier im UI stören mich und dieses laggy verhalten...
 class _MHDScannerPageState extends State<MHDScannerPage> {
   late CameraController _cameraController;
