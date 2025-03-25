@@ -55,7 +55,7 @@ class _FoodscanScreenState extends State<FoodscanScreen> {
       ),
     );
   }
-
+///Auch keine Ahnung, darf sowas als bloc gemacht werden?!  Muss sowas im UI stehen? Wo schreibt man so funktionen in Flutter hin :(
   Future<void> startScan(BuildContext context) async {
     try {
       var result = await BarcodeScanner.scan(
